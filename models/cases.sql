@@ -1,1 +1,1 @@
-select * from `stacklabs-payments.transactions.covid_data` where new_recovered > new_confirmed
+select * from `stacklabs-payments.transations.transactions` where new_recovered > new_confirmed

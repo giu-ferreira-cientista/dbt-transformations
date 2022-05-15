@@ -1,3 +1,3 @@
-SELECT key, total_tested, total_confirmed, total_recovered , total_deceased from `stacklabs-payments.transations.transactions`
-WHERE total_recovered > total_deceased 
-AND key = 'BR'
+SELECT T.key, T.total_tested, T.total_confirmed, T.total_recovered , T.total_deceased from `stacklabs-payments.transations.transactions` as  T
+WHERE T.total_recovered > T.total_deceased 
+AND T.key = 'BR'

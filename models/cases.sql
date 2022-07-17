@@ -2,5 +2,5 @@ SELECT T.amt,T.dob,T.job,T.ssn,T.zip,T.city,T.last,T.first,T.state,T.cc_num,T.st
 CASE
     WHEN gender = "M" THEN 1
     WHEN gender = "F" THEN 0
-END as gender;
+END as gender
 from `stacklabs-payments.transations.transaction` as  T
